@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #777;
+    height: 100%;
+}
+
+.conteudo {
+    color: #cfc9c9;
+    background-color: black;
+    text-align: justify;
+    padding: 50px 80px;
+    animation-name: conteudo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    animation-name: titulo-conteudo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/*Efeito paralax*/
+
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6 {
+    position: relative;
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.caixa1 {
+    background-image: url(../imagens/one-piece.png);
+}
+
+.caixa2 {
+    background-image: url(../imagens/blue-lock.png);
+}
+
+.caixa3 {
+    background-image: url(../imagens/jujutsu-kaisen.png);
+}
+
+.caixa4 {
+    background-image: url(../imagens/jojo.png);
+}
+
+.caixa5 {
+    background-image: url(../imagens/fate.png);
+}
+
+.caixa6 {
+    background-image: url(../imagens/solo-leveling.png);
+}
+
+.conteudo-titulo {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo-titulo span.titulo {
+    color: #fff;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    animation-name: conteudo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+/*Animação*/
+
+@keyframes conteudo {
+
+    0% {background-color: black;}
+    50% {background-color: white;}
+    100% {background-color: black;}
+    0% {color: #cfc9c9;}
+    50% {color: black;}
+    100% {color: #cfc9c9;}
+
+
+}
+
+@keyframes titulo-conteudo {
+
+    0% {color: #fff;}
+    50% {color: black;}
+    100% {color: #fff;}
+
+
+}
+
